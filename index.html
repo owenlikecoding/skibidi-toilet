@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skipdi Tolit</title>
+</head>
+<body>
+    <button id="song">SIPDIDI</button>
+    <style>
+        body{
+            background-image: url(./skipdi.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+        /* make the button centened and goood */
+        button{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px 30px;
+            font-size: 30px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: #fff;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+    </style>
+    <script>
+        var song = document.getElementById("song");
+        song.addEventListener("click", function(){
+            var audio = new Audio("./Voicy_skibidi toilet.mp3");
+            audio.play();
+            audio.loop = true;
+            // create a animation off confeti
+            song.style.backgroundColor = "red";
+            // create a animation off confeti
+        });
+    </script>
+</body>
+</html>
